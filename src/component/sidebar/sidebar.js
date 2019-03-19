@@ -15,14 +15,16 @@ class Sidebar extends Component {
 
     // const inSession = this.props.people.filter(person => person.onStage === true);
 
+    let clicked = '';
+
     return (
       <div className="sidebar">
         <ul>
-          <li>Chat</li>
-          <li>Participants</li>
-          <li><img src={settings} /></li>
-          <li><img src={link} /></li>
-          <li><img src={help} /></li>
+          <li><button onClick={clicked='chat'}>Chat</button></li>
+          <li><button onClick={clicked='participants'}>Participants</button></li>
+          <li><button onClick={clicked='settings'}><img src={settings} buttonlt="settings" /></button></li>
+          <li><button onClick={clicked='link'}><img src={link} buttonlt="link" /></button></li>
+          <li><button onClick={clicked='help'}><img src={help} buttonlt="help" /></button></li>
         </ul>
         <Participants people={this.props.people} />
       </div>
