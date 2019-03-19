@@ -1,0 +1,15 @@
+.sidebar ul {
+  list-style-type: none;
+  display: flex;
+  /* align-content: space-around; */
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li img {
+  padding-top: 5px;
+  min-width: 15px;
+  max-width: 20px;
+}

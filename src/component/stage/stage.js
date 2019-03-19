@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './stage.css';
-import search from './icon-search.png';
-import speaker from './icon-speaker.png';
+import search from './img/icon-search.png';
+import speaker from './img/icon-speaker.png';
 
 class Stage extends Component {
 

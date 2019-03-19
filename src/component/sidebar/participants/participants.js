@@ -21,10 +21,7 @@ class Participant extends Component {
           <div className="">{person.name}</div>
           
           <div className="Participant-Card-Details-Sub-Icons">
-            <ul>
-              <li>icon</li>
-              <li>boot</li>
-            </ul>
+            <ul><li>icon</li><li>boot</li></ul>
           </div>
 
         </div>

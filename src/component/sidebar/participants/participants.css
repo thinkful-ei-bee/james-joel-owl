@@ -1,7 +1,7 @@
 .Participants {
   display: flex;
   flex-direction: column;
-  width: 10em;
+  width: 15em;
   height: 100vh;
 }
 
