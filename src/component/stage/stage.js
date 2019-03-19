@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './stage.css';
+import search from './icon-search.png';
+import speaker from './icon-speaker.png';
 
 class Stage extends Component {
 
@@ -11,27 +13,66 @@ class Stage extends Component {
 
     const onStage = this.props.people.filter(person => person.onStage === true);
 
-    const onStageHtml = onStage.map((person, index) => (
-    
-      <div className="Stage-Card" key={index}>
-        <div className="Stage-Person">
-          <div className="Stage-Name-Box">
-            <div>
-              <p>{person.name}</p>
-            </div>
-            <div className="Stage-Name-Box-Details">
-              <hr></hr>
-            </div>
-          </div>
-          
-        </div>
-      </div>
+    const onStageTopHtml = onStage.map((person, index) => {
+      if(index <= 1) {
+        return (
+          <div className="Stage-Card" key={index}>
+            <div className="Stage-Person">
 
-    ));
+              <div className="Stage-Name-Box">
+
+                <p>{person.name}</p>
+                
+                <hr />
+
+                <ul>
+                  <i><img className="Stage-Name-Box-Icon" src={speaker} alt="speaker" /></i>
+                  <i><img className="Stage-Name-Box-Icon" src={search} alt="search" /></i>
+                </ul>
+
+              </div>
+
+              <img src={person.avatar} alt="user stage avatar"></img>
+          
+            </div>
+          </div>)
+      }
+      
+
+    });
+
+    const onStageBottomHtml = onStage.map((person, index) => {
+      if(index >= 2) {
+        return (
+          <div className="Stage-Card" key={index}>
+            <div className="Stage-Person">
+
+              <div className="Stage-Name-Box">
+
+                
+                <hr />
+
+                <img src={person.avatar} alt="user stage avatar"></img>
+
+              </div>
+
+              
+          
+            </div>
+          </div>)
+      }
+      
+
+    });
 
     return (
       <div className="Stage">
-        {onStageHtml}
+        <div className="stage-top">
+          {onStageTopHtml}
+        </div>
+        <div className="stage-bottom">
+          {onStageBottomHtml}
+        </div>
       </div>
     );
   }

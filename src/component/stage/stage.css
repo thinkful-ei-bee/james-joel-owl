@@ -1,7 +1,9 @@
 .Stage {
   background-color: #404853;
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  flex-wrap: wrap;
   height: 100vh;
 }
 
@@ -13,6 +15,9 @@
 
 .Stage-Person {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
 }
 
 .Stage-Name-Box {
@@ -24,10 +29,49 @@
   align-items: center;
   background-color: #29333f;
   width: 12em;
-  height: 4em;
+  max-height: 5em;
+}
+
+.Stage-Name-Box ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.Stage-Name-Box-Icon {
+  width: 30px;
+  height: 30px;
 }
 
 .Stage-Name-Box hr {
   width: 5em;
-  border: solid red 1px;
+  border: solid #f37a7b 2px;
+  border-radius: 2px;
+}
+
+.Stage-Person img {
+  border-radius: 100%;
+}
+
+.stage-top {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.stage-bottom {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.stage-bottom img {
+  width: 70px;
+  border-radius: 100%;
+
+}
+
+.stage-bottom .Stage-Name-Box {
+  max-height: 15em;
+  border-radius: 5px;
 }

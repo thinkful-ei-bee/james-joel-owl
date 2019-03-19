@@ -16,12 +16,15 @@ class Participant extends Component {
         
         <img src={person.avatar} alt="user avatar"/>
         
-        <div className="">{person.name}</div>
-        
-        <div className="">
-         
-          <div className="">
-           
+        <div className="Participant-Card-Details">
+
+          <div className="">{person.name}</div>
+          
+          <div className="Participant-Card-Details-Sub-Icons">
+            <ul>
+              <li>icon</li>
+              <li>boot</li>
+            </ul>
           </div>
 
         </div>

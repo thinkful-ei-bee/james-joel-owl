@@ -23,6 +23,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.7.2",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "react-test-renderer": "^16.8.4"
   }
 }
