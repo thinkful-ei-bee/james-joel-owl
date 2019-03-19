@@ -1,8 +1,15 @@
 .Participant-Card img {
   max-width: 50px;
   height: auto;
+  
 }
 
 .Participant-Card {
   display: flex;
+  flex-direction: column;
+}
+
+.Participant-Card-Details {
+  display: flex;
+  flex-direction: row;
 }

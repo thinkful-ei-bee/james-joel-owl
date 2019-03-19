@@ -17,13 +17,15 @@ class Participant extends Component {
         
         <img src={person.avatar} alt="user avatar"/>
         
-        <span className="Participant-Card-Name">{person.name}</span>
-
-        {/* Determin if person is on stage or not */}
-        <div className="Participant-Card-Stage">
-          {person.onStage ? 'on stage' : 'off stage'}
+        <div className="Participant-Card-Name">{person.name}</div>
+        
+        <div className="Participant-Card-Details">
+          {/* Determin if person is on stage or not */}
+          <div className="Participant-Card-Stage">
+            {person.onStage ? 'on stage' : ''}
+            <a href="#">Boot</a>
+          </div>
         </div>
-           
       </div>
     ));
 
