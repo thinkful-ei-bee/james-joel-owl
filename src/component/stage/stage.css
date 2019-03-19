@@ -1,5 +1,33 @@
 .Stage {
-  background-color: #848384;
+  background-color: #404853;
+  display: flex;
   flex-grow: 1;
   height: 100vh;
+}
+
+.Stage-Card {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.Stage-Person {
+  display: flex;
+}
+
+.Stage-Name-Box {
+  color: #dae5d2;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #29333f;
+  width: 12em;
+  height: 4em;
+}
+
+.Stage-Name-Box hr {
+  width: 5em;
+  border: solid red 1px;
 }

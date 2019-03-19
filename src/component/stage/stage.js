@@ -12,11 +12,21 @@ class Stage extends Component {
     const onStage = this.props.people.filter(person => person.onStage === true);
 
     const onStageHtml = onStage.map((person, index) => (
-      
-      <div className="Stage-Personkey" key={index}>
-      hi
+    
+      <div className="Stage-Card" key={index}>
+        <div className="Stage-Person">
+          <div className="Stage-Name-Box">
+            <div>
+              <p>{person.name}</p>
+            </div>
+            <div className="Stage-Name-Box-Details">
+              <hr></hr>
+            </div>
+          </div>
+          
+        </div>
       </div>
-      
+
     ));
 
     return (
