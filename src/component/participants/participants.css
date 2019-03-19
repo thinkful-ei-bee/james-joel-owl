@@ -1,7 +1,14 @@
+.Participants {
+  /* display: flex; */
+  /* flex-flow is flex-direction and flex-wrap short hand */
+  /* flex-flow: column nowrap; */
+  width: 10em;
+  height: 100vh;
+}
+
 .Participant-Card img {
   max-width: 50px;
   height: auto;
-  
 }
 
 .Participant-Card {

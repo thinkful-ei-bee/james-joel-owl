@@ -9,17 +9,18 @@ class Stage extends Component {
 
   render() {
 
-    const onStage = this.props.people.filter(person => person.inSession === true);
+    const onStage = this.props.people.filter(person => person.onStage === true);
 
-    const onStageHtml = something.map((person, index) => (
-      <div className="Stage" key={index}>
-        
-        
+    const onStageHtml = onStage.map((person, index) => (
+      
+      <div className="Stage-Personkey" key={index}>
+      hi
       </div>
+      
     ));
 
     return (
-      <div className="Participants">
+      <div className="Stage">
         {onStageHtml}
       </div>
     );
