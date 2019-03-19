@@ -37,7 +37,7 @@ class Stage extends Component {
             </div>
           </div>)
       }
-      
+      else { return '' }
 
     });
 
@@ -48,7 +48,6 @@ class Stage extends Component {
             <div className="Stage-Person">
 
               <div className="Stage-Name-Box">
-
                 
                 <hr />
 
@@ -56,11 +55,10 @@ class Stage extends Component {
 
               </div>
 
-              
-          
             </div>
           </div>)
       }
+      else { return '' }
       
 
     });
