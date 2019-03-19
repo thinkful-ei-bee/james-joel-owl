@@ -9,23 +9,23 @@ class Participant extends Component {
 
   render() {
 
-    const inSession = this.props.people.filter(person => person.inSession === true);
-    const notInSession = this.props.people.filter(person => person.inSession === false);
+    const inSession = this.props.people.filter(person => person.onStage === true);
 
     const inSessionHtml = inSession.map((person, index) => (
       <div className="Participant-Card" key={index}>
         
         <img src={person.avatar} alt="user avatar"/>
         
-        <div className="Participant-Card-Name">{person.name}</div>
+        <div className="">{person.name}</div>
         
-        <div className="Participant-Card-Details">
-          {/* Determin if person is on stage or not */}
-          <div className="Participant-Card-Stage">
-            {person.onStage ? 'on stage' : ''}
-            <a href="#">Boot</a>
+        <div className="">
+         
+          <div className="">
+           
           </div>
+
         </div>
+
       </div>
     ));
 
