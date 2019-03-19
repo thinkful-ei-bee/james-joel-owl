@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Participants /> renders without crashing 1`] = `
+<div
+  className="Participants"
+>
+  <div
+    className="Participant-Card"
+  >
+    <img
+      alt="user avatar"
+      src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+    />
+    <div
+      className="Participant-Card-Name"
+    >
+      Koren Templeton
+    </div>
+    <div
+      className="Participant-Card-Details"
+    >
+      <div
+        className="Participant-Card-Stage"
+      >
+        on stage
+        <a
+          href="#"
+        >
+          Boot
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Participant-Card"
+  >
+    <img
+      alt="user avatar"
+      src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+    />
+    <div
+      className="Participant-Card-Name"
+    >
+      Caty Flucker
+    </div>
+    <div
+      className="Participant-Card-Details"
+    >
+      <div
+        className="Participant-Card-Stage"
+      >
+        
+        <a
+          href="#"
+        >
+          Boot
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Participant-Card"
+  >
+    <img
+      alt="user avatar"
+      src="https://robohash.org/etexercitationemassumenda.jpg?size=200x200&set=set1"
+    />
+    <div
+      className="Participant-Card-Name"
+    >
+      Frank Runciman
+    </div>
+    <div
+      className="Participant-Card-Details"
+    >
+      <div
+        className="Participant-Card-Stage"
+      >
+        
+        <a
+          href="#"
+        >
+          Boot
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Participant-Card"
+  >
+    <img
+      alt="user avatar"
+      src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+    />
+    <div
+      className="Participant-Card-Name"
+    >
+      Ashla Attwool
+    </div>
+    <div
+      className="Participant-Card-Details"
+    >
+      <div
+        className="Participant-Card-Stage"
+      >
+        on stage
+        <a
+          href="#"
+        >
+          Boot
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
