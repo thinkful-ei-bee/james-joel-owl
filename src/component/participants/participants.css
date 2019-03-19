@@ -7,6 +7,9 @@
 }
 
 .Participant-Card img {
+  border-radius: 50%;
+  border: 1px solid black;
+  background: rgb(94, 92, 92);
   max-width: 50px;
   height: auto;
 }
@@ -14,6 +17,7 @@
 .Participant-Card {
   display: flex;
   flex-direction: column;
+  padding-left: 15px;
 }
 
 .Participant-Card-Details {

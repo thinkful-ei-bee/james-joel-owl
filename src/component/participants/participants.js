@@ -18,12 +18,11 @@ class Participant extends Component {
         
         <div className="">{person.name}</div>
         
-        <div className="">
+        <div className="">{(person.inSession) ? 'On Stage' : 'Off Stage'}
          
-          <div className="">
-           
-          </div>
-
+        <div className="">
+        
+        </div>
         </div>
 
       </div>
