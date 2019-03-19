@@ -5,9 +5,9 @@ import Participants from './component/participants/participants';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <main role="main" className="App">
         <Participants people={participants} />
-      </div>
+      </main>
     );
   }
 }
