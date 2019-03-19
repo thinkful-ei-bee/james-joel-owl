@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
+import './participants.css';
 
 class Participant extends Component {
   render() {
+
+    const inSession = this.props.people.filter(person => person.inSession === true);
+    const notInSession = this.props.people.filter(person => person.inSession === false);
+
+    const inSessionHtml = inSession.map((person, index) => (
+      <div className="Participant-Card" key={index}>
+        <img src={person.avatar} />
+      </div>
+    ))
+
     return (
       <div className="Participants">
-        <p>Hi I am a participant!</p>
-        <p>Hi I am a participant, and my name is {this.props.people[0].name}</p>
+        {inSessionHtml}
       </div>
     );
   }
