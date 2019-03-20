@@ -20,11 +20,11 @@ class Sidebar extends Component {
     return (
       <div className="sidebar">
         <ul>
-          <li><button onClick={clicked='chat'}>Chat</button></li>
-          <li><button onClick={clicked='participants'}>Participants</button></li>
-          <li><button onClick={clicked='settings'}><img src={settings} buttonlt="settings" /></button></li>
-          <li><button onClick={clicked='link'}><img src={link} buttonlt="link" /></button></li>
-          <li><button onClick={clicked='help'}><img src={help} buttonlt="help" /></button></li>
+          <li><button className="link-button" onClick={clicked='chat'}>Chat</button></li>
+          <li><button className="link-button" onClick={clicked='participants'}>Participants</button></li>
+          <li><button className="link-button" onClick={clicked='settings'}><img src={settings} buttonlt="settings" alt="icon" /></button></li>
+          <li><button className="link-button" onClick={clicked='link'}><img src={link} buttonlt="link" alt="icon" /></button></li>
+          <li><button className="link-button" onClick={clicked='help'}><img src={help} buttonlt="help" alt="icon" /></button></li>
         </ul>
         <Participants people={this.props.people} />
       </div>
